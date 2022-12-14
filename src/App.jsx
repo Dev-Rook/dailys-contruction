@@ -1,21 +1,25 @@
-import Styles from  './App.module.scss';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Styles from "./App.module.scss";
+
+import Navbar from "./Components/Main/Navbar";
+import Header from "./Components/Main/Header";
+import Footer from "./Components/Main/Footer";
+
+import Landing from "./Pages/Landing";
+import Contact from "./Pages/Contact";
+import Error from "./Pages/Error";
 
 function App() {
   return (
     <div className={Styles.App}>
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Landing />} />
+          <Route path={"Contact"} element={<Contact />} />
+          <Route path={"*"} element={<Error />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
