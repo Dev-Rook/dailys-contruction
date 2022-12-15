@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../../Styles/Compenent-Styles/Navbar.module.scss";
 
+// Material Ui Imports Start
+
+import MenuIcon from "@mui/icons-material/Menu";
+
+// Material Ui Imports End
+
 const Navbar = () => {
   return (
     <nav className={Styles.Navbar}>
@@ -40,7 +46,16 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+
+        <MenuIcon
+          className={Styles.MenuIcon}
+          sx={{ color: "white", fontSize: 30 }}
+        />
       </ul>
+
+      {/* Mobile Menu Start */}
+      <div className={Styles.Mobile_Menu_Container}></div>
+      {/* Mobile Menu End */}
     </nav>
   );
 };
