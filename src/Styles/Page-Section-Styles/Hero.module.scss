@@ -10,31 +10,32 @@
   width: 100%;
 
   .Content_Container {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
 
     gap: 0px;
     padding: 5px;
-    
+
     justify-content: space-evenly;
     align-items: left;
-    
+
     height: fit-content;
     width: fit-content;
-    
+
     margin-left: 20px;
 
     .Small_Text {
       font-size: 18px;
       font-weight: 100;
       font-style: bold;
+      transition: 0.3s;
     }
 
     .Large_Text {
       font-size: 60px;
       font-weight: 100;
       font-style: bold;
+      transition: 0.3s;
     }
 
     .Project_Button {
@@ -54,3 +55,30 @@
     }
   }
 }
+
+// Media Queries Start
+@media only screen and (max-width: 600px) {
+  .Section {
+    .Content_Container {
+      .Large_Text {
+        font-size: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .Section {
+    .Content_Container {
+      .Small_Text {
+        font-size: 15px;
+      }
+      .Large_Text {
+        font-size: 30px;
+      }
+      .Project_Button {
+        padding: 2.5px 10px;
+      }
+    }
+  }
+}
+// Media Queries End
