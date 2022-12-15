@@ -8,7 +8,9 @@ const Indroduction = () => {
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
         <div className={Styles.Images_Container}>
-          <div className={Styles.Image_Container_1}></div>
+          <div className={Styles.Image_Container_1}>
+            <img src="" alt="" className={Styles.Image} />
+          </div>
           <div className={Styles.Image_Container_2}></div>
         </div>
 
