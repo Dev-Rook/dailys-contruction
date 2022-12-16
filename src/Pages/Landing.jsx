@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <div className={Styles.Page}>
       <Hero />
-      {/* <Introduction /> */}
+      <Introduction />
       <Services />
     </div>
   )

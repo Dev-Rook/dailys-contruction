@@ -1,5 +1,5 @@
 .Navbar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 
   display: flex;
@@ -57,10 +57,12 @@
         font-size: 13px;
         font-weight: 300;
       }
+
+      display: none;
     }
 
     .MenuIcon {
-      display: none;
+      display: flex;
     }
   }
 

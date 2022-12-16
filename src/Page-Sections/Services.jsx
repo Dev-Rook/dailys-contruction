@@ -10,7 +10,9 @@ import ServiceData from "../Assets/Data/Services.json";
 const Services = () => {
   const [data, setData] = useState(ServiceData)
   return (
-    <div>Services</div>
+    <div className={Styles.Section}>
+      
+    </div>
   )
 }
 

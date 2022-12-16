@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={Styles.Navbar}>
       <div className={Styles.Brand_Container}>
-        <p className={Styles.Brand}>Daily's Contruction</p>
+        <p className={Styles.Brand}>※</p>
       </div>
 
       <ul className={Styles.Navlink_Container}>
