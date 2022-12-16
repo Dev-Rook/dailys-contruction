@@ -30,6 +30,8 @@ const Hero = () => {
         <button className={Styles.Project_Button}>Our Projects</button>
       </div>
 
+      <div className={Styles.Diffuser}></div>
+
       <div className={Styles.Slider_Container}>
         <Swiper
           slidesPerView={1}
