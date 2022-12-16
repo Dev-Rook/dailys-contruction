@@ -12,9 +12,10 @@
   width: 100%;
 
   .Content_Container {
+    border: 1px solid black;
     display: flex;
 
-    gap: 10px;
+    gap: 50px;
 
     justify-content: space-evenly;
     align-items: left;
@@ -43,8 +44,15 @@
         justify-content: center;
         align-items: center;
 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
         height: 800px;
         width: 400px;
+
+        transition: 0.3s;
 
         .Image {
           height: 100%;
@@ -53,10 +61,20 @@
         }
       }
       .Image_Container_1 {
+        // background-image: url(`https://github.com/Dev-Rook/dailys-contruction/blob/master/src/Assets/Images/%D0%98%D0%B4%D1%82%D0%B8.jpeg?raw=true`);
         margin-bottom: 50px;
       }
       .Image_Container_2 {
+        // background-image: url(`https://github.com/Dev-Rook/dailys-contruction/blob/master/src/Assets/Images/Gallery%20of%20Cala%20Saona%20House%20_%20Biombo%20Architects%20%20-%202.png?raw=true`);
         margin-top: 50px;
+      }
+
+      .Image_Container_1:is(:hover, :focus) {
+        transform: translateY(-5px);
+      }
+
+      .Image_Container_2:is(:hover, :focus) {
+        transform: translateY(-5px);
       }
     }
 
@@ -112,3 +130,83 @@
     }
   }
 }
+
+// Media Queries Start
+@media only screen and (max-width: 1555px) {
+  .Section {
+    .Content_Container {
+      .Images_Container {
+        .Image_Container_1,
+        .Image_Container_2 {
+          height: 600px;
+          width: 300px;
+        }
+      }
+
+      .About_Container {
+        .Brand {
+          font-size: 40px;
+        }
+        .Description {
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .Section {
+    .Content_Container {
+      .Images_Container {
+        .Image_Container_1,
+        .Image_Container_2 {
+          height: 600px;
+          width: 300px;
+        }
+      }
+
+      .About_Container {
+        .Brand {
+          font-size: 40px;
+        }
+        .Description {
+          font-size: 18px;
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Section {
+    .Content_Container {
+      .Images_Container {
+        .Image_Container_1,
+        .Image_Container_2 {
+          height: 600px;
+          width: 300px;
+        }
+      }
+
+      .About_Container {
+        .Brand {
+          font-size: 30px;
+        }
+        .Description {
+          font-size: 15px;
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// Media Queries End
