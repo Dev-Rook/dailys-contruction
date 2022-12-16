@@ -35,11 +35,11 @@ const Hero = () => {
       <div className={Styles.Slider_Container}>
         <Swiper
           slidesPerView={1}
-          speed={1000}
+          speed={2000}
           spaceBetween={0}
           modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
           autoplay={{
-            delay: 4000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           grabCursor={true}
