@@ -1,26 +1,28 @@
 .Section {
-  // background: rgb(23, 26, 32);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(23, 26, 32, 1) 0%,
-  //   rgba(36, 54, 55, 0.773546918767507) 82%,
-  //   rgba(36, 54, 55, 1) 100%
-  // );
+  border: 1px solid black;
+  //   background: rgb(23, 26, 32);
+  //   background: linear-gradient(
+  //     90deg,
+  //     rgba(23, 26, 32, 1) 0%,
+  //     rgba(36, 54, 55, 0.773546918767507) 82%,
+  //     rgba(36, 54, 55, 1) 100%
+  //   );
+  
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+  
+    justify-content: center;
+    align-items: center;
+  
 
-  display: flex;
-
-  position: relative;
-
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  overflow: hidden;
-
-  height: 100%;
-  width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+  
+    height: fit-content;
+    width: 100%;
 
   .Content_Container {
     display: flex;
@@ -153,7 +155,6 @@
 }
 @media only screen and (max-width: 996px) {
   .Section {
-    padding: 5px;
     height: fit-content;
     .Content_Container {
       flex-direction: column-reverse;

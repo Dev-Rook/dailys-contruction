@@ -22,7 +22,7 @@ const Indroduction = () => {
         <div className={Styles.Image_Container}>
           <img
             src={
-              "https://png.pngtree.com/element_pic/00/16/09/2057e0eecf792fb.jpg"
+              "https://github.com/Dev-Rook/dailys-contruction/blob/master/src/Assets/Images/V.jpg?raw=true"
             }
             alt=""
             className={Styles.Image}
