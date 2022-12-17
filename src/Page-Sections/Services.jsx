@@ -15,14 +15,21 @@ const Services = () => {
 
   return (
     <div className={Styles.Section}>
+      <div className={Styles.About_Container}>
+        <p className={Styles.Question}>- What We Do</p>
+        <p className={Styles.Brand}>Providing The Best Service</p>
+      </div>
+
       <div className={Styles.Content_Container}>
         {data &&
           data.map((value) => {
-            return <div className={Styles.Card} key={value.id}>
-              <img src={value.Icon} alt="" className={Styles.Icon} />
-              <p className={Styles.Title}>{value.Title}</p>
-              <p className={Styles.Description}>{value.Description}</p>
-            </div>;
+            return (
+              <div className={Styles.Card} key={value.id}>
+                <img src={value.Icon} alt="" className={Styles.Icon} />
+                <p className={Styles.Title}>{value.Title}</p>
+                <p className={Styles.Description}>{value.Description}</p>
+              </div>
+            );
           })}
       </div>
     </div>
