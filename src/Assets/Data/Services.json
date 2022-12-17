@@ -19,8 +19,8 @@
     },
     {
         "id": 4,
-        "Icon": "",
-        "Title": "Title",
+        "Icon": "https://github.com/Dev-Rook/dailys-contruction/blob/master/src/Assets/Icons/Warehouse-Icon-1.png?raw=true",
+        "Title": "Hardware",
         "Description": "Description"
     }
 ]
