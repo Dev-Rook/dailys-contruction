@@ -7,14 +7,14 @@
     },
     {
         "id": 2,
-        "Icon": "",
-        "Title": "Title",
+        "Icon": "https://github.com/Dev-Rook/dailys-contruction/blob/master/src/Assets/Icons/Construction-Icon-1.png?raw=true",
+        "Title": "Construction",
         "Description": "Description"
     },
     {
         "id": 3,
         "Icon": "",
-        "Title": "Title",
+        "Title": "Consultation",
         "Description": "Description"
     },
     {
