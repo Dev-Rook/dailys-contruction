@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Styles from "../Styles/Page-Section-Styles/Hero.module.scss";
@@ -15,11 +15,10 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-import HeroData from "../Assets/Data/Hero.json"
+import HeroData from "../Assets/Data/Hero.json";
 
 const Hero = () => {
-
-  const [data, setData] = useState(HeroData)
+  const [data, setData] = useState(HeroData);
 
   return (
     <div className={Styles.Section}>
@@ -52,11 +51,13 @@ const Hero = () => {
         >
           {data &&
             data.map((value) => {
-              return <SwiperSlide key={value?.id}>
-                <div className={Styles.Image_Container}>
-                  <img src={value.Image} alt="" className={Styles.Image} />
-                </div>
-              </SwiperSlide>;
+              return (
+                <SwiperSlide key={value?.id}>
+                  <div className={Styles.Image_Container}>
+                    <img src={value.Image} alt="" className={Styles.Image} />
+                  </div>
+                </SwiperSlide>
+              );
             })}
         </Swiper>
       </div>

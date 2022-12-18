@@ -5,6 +5,7 @@ import Styles from "../Styles/Page-Styles/Landing.module.scss"
 import Hero from '../Page-Sections/Hero'
 import Introduction from "../Page-Sections/Indroduction"
 import Services from '../Page-Sections/Services'
+import Work from '../Page-Sections/Work'
 // Page Section Import End
 
 const Landing = () => {
@@ -13,6 +14,7 @@ const Landing = () => {
       <Hero />
       <Introduction />
       <Services />
+      <Work />
     </div>
   )
 }
