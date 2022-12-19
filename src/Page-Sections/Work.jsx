@@ -16,6 +16,8 @@ import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
 import WorkData from "../Assets/Data/Work.json";
+import TextField from "@mui/material/TextField";
+
 
 const Work = () => {
   const [data, setData] = useState(WorkData);
@@ -28,8 +30,6 @@ const Work = () => {
 
         <button className={Styles.Project_Button}>Our Projects</button>
       </div>
-
-      <div className={Styles.Diffuser}></div>
 
       <div className={Styles.Slider_Container}>
         <Swiper
@@ -64,15 +64,27 @@ const Work = () => {
             996: {
               slidesPerView: 3,
             },
+            1920: {
+              slidesPerView: 4,
+            },
           }}
         >
           {data &&
             data.map((value) => {
               return (
                 <SwiperSlide key={value?.id}>
-                  <div className={Styles.Image_Container}>
-                    <img src={value.Image} alt="" className={Styles.Image} />
-                  </div>
+                  <Link to={""}>
+                    <div className={Styles.Project_Card}>
+                      <div className={Styles.Text_Container}>
+                        <p className={Styles.Title}>{value.Title}</p>
+                        <p className={Styles.Creator}>{value.Creator}</p>
+                      </div>
+                      <div className={Styles.Diffuser}></div>
+                      <div className={Styles.Image_Container}>
+                      <img src={value.Image} alt="" className={Styles.Image} />
+                      </div>
+                    </div>
+                  </Link>
                 </SwiperSlide>
               );
             })}
