@@ -7,6 +7,7 @@ import Introduction from "../Page-Sections/Indroduction"
 import Services from '../Page-Sections/Services'
 import Work from '../Page-Sections/Work'
 import Blog from '../Page-Sections/Blog'
+import GetInTouch from '../Page-Sections/GetInTouch'
 // Page Section Import End
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
       <Services />
       <Work />
       <Blog />
+      <GetInTouch />
     </div>
   )
 }
