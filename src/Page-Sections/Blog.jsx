@@ -10,9 +10,9 @@ const Blog = () => {
 
   return (
     <div className={Styles.Section}>
-      <div className={Styles.About_Container}>
-        <p className={Styles.Question}>- What We Do</p>
-        <p className={Styles.Brand}>Providing The Best Service</p>
+      <div className={Styles.Section_Title_Container}>
+        <p className={Styles.Question}>- Blog</p>
+        <p className={Styles.Section_Title}>Some Of Our Latest News</p>
       </div>
       <div className={Styles.Content_Container}>
         {data &&
@@ -32,6 +32,10 @@ const Blog = () => {
             );
           })}
       </div>
+
+      <button className={Styles.View_More_Button}>
+        View More
+      </button>
     </div>
   );
 };
