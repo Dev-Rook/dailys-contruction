@@ -2,7 +2,33 @@
     {
         "id": 1,
         "Image": "",
-        "Category": "",
-        "Titl"
+        "Category": "Interior Design",
+        "Title": "",
+        "Date": "May 21, 23",
+        "Description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure nemo, in laudantium possimus aut fuga necessitatibus assumenda neque similique."
+    },
+    {
+        "id": 2,
+        "Image": "",
+        "Category": "Architecture",
+        "Title": "",
+        "Date": "May 21, 23",
+        "Description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure nemo, in laudantium possimus aut fuga necessitatibus assumenda neque similique."
+    },
+    {
+        "id": 3,
+        "Image": "",
+        "Category": "Nature",
+        "Title": "",
+        "Date": "May 21, 23",
+        "Description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure nemo, in laudantium possimus aut fuga necessitatibus assumenda neque similique."
+    },
+    {
+        "id": 4,
+        "Image": "",
+        "Category": "Furnature",
+        "Title": "Title",
+        "Date": "May 21, 23",
+        "Description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure nemo, in laudantium possimus aut fuga necessitatibus assumenda neque similique."
     }
 ]

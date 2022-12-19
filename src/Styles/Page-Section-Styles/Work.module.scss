@@ -77,7 +77,8 @@
         width: 100%;
 
         .Text_Container {
-          border: 1px solid white;
+          // border: 1px solid white;
+          // background-color: rgba(0, 0, 0, 0.5);
           display: flex;
           flex-direction: column;
 
@@ -90,6 +91,24 @@
           position: absolute;
           bottom: 20px;
           left: 20px;
+
+          .Title {
+            font-size: 25px;
+            font-weight: 300;
+            font-style: bold;
+          }
+
+          .Architect {
+            font-size: 15px;
+            font-weight: 300;
+            font-style: bold;
+          }
+
+          .Title {
+            font-size: 25px;
+            font-weight: 300;
+            font-style: bold;
+          }
         }
 
         .Diffuser {

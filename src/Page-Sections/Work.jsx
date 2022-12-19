@@ -76,8 +76,8 @@ const Work = () => {
                   <Link to={""}>
                     <div className={Styles.Project_Card}>
                       <div className={Styles.Text_Container}>
-                        <p className={Styles.Title}>{value.Title}</p>
-                        <p className={Styles.Creator}>{value.Creator}</p>
+                        <p className={Styles.Title}>{value?.Title}</p>
+                        <p className={Styles.Architect}>{value?.Architect}</p>
                       </div>
                       <div className={Styles.Diffuser}></div>
                       <div className={Styles.Image_Container}>
